@@ -1,0 +1,78 @@
+.edit-patient {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  font-weight: bold;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+label:hover {
+  color: #3498db;
+}
+
+input {
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background: linear-gradient(to right, #ffffff 0%, #f8f9fa 100%);
+}
+
+input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  outline: none;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #2980b9 0%, #2c3e50 100%);
+}
+
+button[type="button"] {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+button[type="button"]:hover {
+  background: linear-gradient(135deg, #c0392b 0%, #922b21 100%);
+}

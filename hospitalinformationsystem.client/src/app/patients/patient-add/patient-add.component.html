@@ -1,0 +1,24 @@
+<div class="add-patient">
+  <h2>Add Patient</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="patient.name" name="name" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label for="fileNo">File No:</label>
+      <input id="fileNo" [(ngModel)]="patient.fileNo" name="fileNo" type="number" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number:</label>
+      <input id="phoneNumber" [(ngModel)]="patient.phoneNumber" name="phoneNumber" class="form-control" required>
+    </div>
+
+    <div class="button-group">
+      <button type="submit" class="btn btn-primary">Save</button>
+      <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+    </div>
+  </form>
+</div>

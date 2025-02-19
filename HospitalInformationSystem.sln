@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "hospitalinformationsystem.client", "hospitalinformationsystem.client\hospitalinformationsystem.client.esproj", "{19EAAC05-6095-4D7E-A5F6-E40250F1AED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalInformationSystem.Domain", "HospitalInformationSystem.Domain\HospitalInformationSystem.Domain.csproj", "{DD282A5C-FAB0-44D4-A5A5-915CA09CA735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalInformationSystem.Infrastructure", "HospitalInformationSystem.Infrastructure\HospitalInformationSystem.Infrastructure.csproj", "{5FA2577C-FCDA-476C-BF68-FA425829048F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalInformationSystem.Server", "HospitalInformationSystem.Server\HospitalInformationSystem.Server.csproj", "{B061AF59-426C-468E-81B9-CCD895ECE329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SourceCode", "SourceCode", "{E6AEE0AB-434D-42CD-9FAE-B7183FF8D078}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DB7438BA-D43E-4A46-8082-C8E3160B40E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalInformationSystem.Application", "HospitalInformationSystem.Application\HospitalInformationSystem.Application.csproj", "{E02A6700-3A45-49E5-B64F-3E38BAA1EA68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalInformationSystem.Application.IntegrationTests", "HospitalInformationSystem.Application.IntegrationTests\HospitalInformationSystem.Application.IntegrationTests.csproj", "{0C723B8C-4E11-47C4-94D5-6ECEB6E8D9AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalInformationSystem.Application.UnitTests", "HospitalInformationSystem.Application.UnitTests\HospitalInformationSystem.Application.UnitTests.csproj", "{DD49CD24-5D68-4AA9-84B9-0042AEA62A1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalInformationSystem.Domain.UnitTests", "HospitalInformationSystem.Domain.UnitTests\HospitalInformationSystem.Domain.UnitTests.csproj", "{8A372C17-8389-42E2-8441-F5395BF9B93B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19EAAC05-6095-4D7E-A5F6-E40250F1AED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EAAC05-6095-4D7E-A5F6-E40250F1AED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EAAC05-6095-4D7E-A5F6-E40250F1AED7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{19EAAC05-6095-4D7E-A5F6-E40250F1AED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EAAC05-6095-4D7E-A5F6-E40250F1AED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19EAAC05-6095-4D7E-A5F6-E40250F1AED7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DD282A5C-FAB0-44D4-A5A5-915CA09CA735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD282A5C-FAB0-44D4-A5A5-915CA09CA735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD282A5C-FAB0-44D4-A5A5-915CA09CA735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD282A5C-FAB0-44D4-A5A5-915CA09CA735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA2577C-FCDA-476C-BF68-FA425829048F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA2577C-FCDA-476C-BF68-FA425829048F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA2577C-FCDA-476C-BF68-FA425829048F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA2577C-FCDA-476C-BF68-FA425829048F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B061AF59-426C-468E-81B9-CCD895ECE329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B061AF59-426C-468E-81B9-CCD895ECE329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B061AF59-426C-468E-81B9-CCD895ECE329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B061AF59-426C-468E-81B9-CCD895ECE329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E02A6700-3A45-49E5-B64F-3E38BAA1EA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02A6700-3A45-49E5-B64F-3E38BAA1EA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02A6700-3A45-49E5-B64F-3E38BAA1EA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02A6700-3A45-49E5-B64F-3E38BAA1EA68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C723B8C-4E11-47C4-94D5-6ECEB6E8D9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C723B8C-4E11-47C4-94D5-6ECEB6E8D9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C723B8C-4E11-47C4-94D5-6ECEB6E8D9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C723B8C-4E11-47C4-94D5-6ECEB6E8D9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD49CD24-5D68-4AA9-84B9-0042AEA62A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD49CD24-5D68-4AA9-84B9-0042AEA62A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD49CD24-5D68-4AA9-84B9-0042AEA62A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD49CD24-5D68-4AA9-84B9-0042AEA62A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A372C17-8389-42E2-8441-F5395BF9B93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A372C17-8389-42E2-8441-F5395BF9B93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A372C17-8389-42E2-8441-F5395BF9B93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A372C17-8389-42E2-8441-F5395BF9B93B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19EAAC05-6095-4D7E-A5F6-E40250F1AED7} = {E6AEE0AB-434D-42CD-9FAE-B7183FF8D078}
+		{DD282A5C-FAB0-44D4-A5A5-915CA09CA735} = {E6AEE0AB-434D-42CD-9FAE-B7183FF8D078}
+		{5FA2577C-FCDA-476C-BF68-FA425829048F} = {E6AEE0AB-434D-42CD-9FAE-B7183FF8D078}
+		{B061AF59-426C-468E-81B9-CCD895ECE329} = {E6AEE0AB-434D-42CD-9FAE-B7183FF8D078}
+		{E02A6700-3A45-49E5-B64F-3E38BAA1EA68} = {E6AEE0AB-434D-42CD-9FAE-B7183FF8D078}
+		{0C723B8C-4E11-47C4-94D5-6ECEB6E8D9AB} = {DB7438BA-D43E-4A46-8082-C8E3160B40E6}
+		{DD49CD24-5D68-4AA9-84B9-0042AEA62A1C} = {DB7438BA-D43E-4A46-8082-C8E3160B40E6}
+		{8A372C17-8389-42E2-8441-F5395BF9B93B} = {DB7438BA-D43E-4A46-8082-C8E3160B40E6}
+	EndGlobalSection
+EndGlobal

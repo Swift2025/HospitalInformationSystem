@@ -1,0 +1,15 @@
+<div class="edit-patient">
+  <h2>Edit Patient</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" [(ngModel)]="patient.name" name="name" required>
+
+    <label for="fileNo">File No:</label>
+    <input id="fileNo" [(ngModel)]="patient.fileNo" name="fileNo" type="number" required>
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input id="phoneNumber" [(ngModel)]="patient.phoneNumber" name="phoneNumber" required>
+    <button type="submit">Save</button>
+    <button type="button" (click)="onCancel()">Cancel</button>
+  </form>
+</div>

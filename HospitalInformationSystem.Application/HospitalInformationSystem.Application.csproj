@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Behaviors\**" />
+	  <Compile Remove="Interfaces\**" />
+	  <EmbeddedResource Remove="Behaviors\**" />
+	  <EmbeddedResource Remove="Interfaces\**" />
+	  <None Remove="Behaviors\**" />
+	  <None Remove="Interfaces\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HospitalInformationSystem.Domain\HospitalInformationSystem.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Common\Mappings\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.11.0" />
+		<PackageReference Include="MediatR" Version="12.4.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
+	</ItemGroup>
+
+</Project>

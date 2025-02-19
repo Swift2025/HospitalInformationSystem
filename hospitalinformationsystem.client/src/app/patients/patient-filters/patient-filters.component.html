@@ -1,0 +1,40 @@
+<div class="patient-list-container">
+  <app-patient-filters (search)="onFiltersChange($event)"></app-patient-filters>
+
+  <div *ngIf="loading" class="loading-spinner">
+    Loading patients...
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && !error">
+    <table class="patient-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>File No</th>
+          <th>Phone Number</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of patients">
+          <td>{{ patient.name }}</td>
+          <td>{{ patient.fileNo }}</td>
+          <td>{{ patient.phoneNumber }}</td>
+          <td>
+            <button (click)="deletePatient(patient.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <button *ngFor="let page of getPages()" (click)="onPageChange(page)">
+        {{ page }}
+      </button>
+    </div>
+  </div>
+</div>
