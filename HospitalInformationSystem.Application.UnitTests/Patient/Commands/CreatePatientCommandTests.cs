@@ -3,7 +3,6 @@ using HospitalInformationSystem.Application.Commands.Patient;
 using HospitalInformationSystem.Application.DTOs;
 using HospitalInformationSystem.Domain.Entities;
 using HospitalInformationSystem.Infrastructure.Persistance;
-using HospitalInformationSystem.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Moq;
